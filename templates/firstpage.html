@@ -14,7 +14,6 @@
             font-family: "Poppins", sans-serif;
             background-color: #eeeff1;
         }
-
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -31,56 +30,54 @@
             max-width: 800px;
             margin: 0 auto;
         }
-
-        .feature-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .dropdown {
+            position: relative;
+            display: inline-block;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .stat-card {
+        .dropdown-content {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            padding: 0.5rem 0;
             transition: all 0.3s ease;
+            margin-top: 0.5rem;
         }
 
-        .stat-card:hover {
-            transform: scale(1.05);
-        }
-    </style>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disease Predictor - AI-Powered Healthcare</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-        
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: #eeeff1;
+        .dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.2s;
         }
 
-        
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-            background-color: #eeeff1;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        .dropdown-content a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: #4B5563;
+            text-decoration: none;
+            transition: all 0.2s ease;
         }
 
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+        .dropdown-content a:hover {
+            background-color: #F3F4F6;
+            color: #2563EB;
+        }
+
+        .dropdown-arrow {
+            display: inline-block;
+            margin-left: 0.25rem;
+            transition: transform 0.2s ease;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
         }
 
         .feature-card {
@@ -115,7 +112,17 @@
                 <div class="nav-links">
                     <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
                     <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">About</a>
-                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Disease Predictor</a>
+                    <div class="dropdown">
+                        <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">
+                            Disease Predictor
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="heart.html"> Heart Disease Predictor</a>
+                            <a href="diabetes.html">Diabetes Disease Predictor</a>
+                        </div>
+                    </div>
+                    
                     <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Health Tips</a>
                     <a href="review.html" class="text-gray-800 hover:text-blue-600 font-medium">Reviews</a>
                     <a href="contactus.html" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
