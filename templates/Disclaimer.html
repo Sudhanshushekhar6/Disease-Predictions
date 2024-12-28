@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - Disease Predictor</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-gray: #f3f4f6;
+            --border-radius: 10px;
+            --warning-color: #dc2626;
+            --warning-bg: #fee2e2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--light-gray);
+            border-radius: var(--border-radius);
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .warning-box {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: var(--border-radius);
+        }
+
+        .warning-box h2 {
+            color: var(--warning-color);
+            border-bottom-color: var(--warning-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "⚠️";
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1.5em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: background-color 0.2s;
+        }
+
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info {
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Disclaimer</h1>
+            <nav class="nav">
+                <a href="firstpage.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="warning-box">
+                <h2>Important Notice</h2>
+                <p>The Disease Predictor is a machine learning-based tool designed to provide general health insights. It is NOT a diagnostic tool and should not be used as a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+
+            <div class="section">
+                <h2>Medical Disclaimer</h2>
+                <ul>
+                    <li>The predictions and information provided are for educational purposes only</li>
+                    <li>Always consult with qualified healthcare professionals for medical advice</li>
+                    <li>Do not disregard professional medical advice based on our predictions</li>
+                    <li>Seek immediate medical attention if you suspect a serious health condition</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Prediction Accuracy</h2>
+                <ul>
+                    <li>Our ML models are based on statistical data and may not apply to individual cases</li>
+                    <li>Predictions have inherent limitations and uncertainties</li>
+                    <li>Results should be verified by medical professionals</li>
+                    <li>Accuracy rates are not guaranteed and may vary</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>No Liability</h2>
+                <ul>
+                    <li>We are not responsible for any decisions made based on our predictions</li>
+                    <li>Users assume all risks associated with using this service</li>
+                    <li>We make no warranties regarding the accuracy of predictions</li>
+                    <li>The service is provided "as is" without any guarantees</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Emergency Situations</h2>
+                <ul>
+                    <li>Do NOT use this service in medical emergencies</li>
+                    <li>Call your local emergency services immediately if needed</li>
+                    <li>This is not a substitute for emergency medical services</li>
+                    <li>Seek immediate care for urgent medical conditions</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>For any questions about this disclaimer, please contact:</p>
+                <a href="mailto:legal@diseasepredictor.com">legal@diseasepredictor.com</a>
+            </div>
+
+            <p class="last-updated">Last updated: December 28, 2024</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Disease Predictor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
