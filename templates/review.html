@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo1.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Patient Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #eeeff1;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #eeeff1;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(4, 15, 139, 0.15);
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .text-lg {
+            padding-left: 10px;
+        }
+
+        .bg-gradient-to-r {
+            background: linear-gradient(90deg, #007bff 0%, #251be7 100%);
+        }
+
+        .rating-star {
+            color: #fbbf24;
+        }
+
+        .review-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="bg-[#eeeff1] shadow-md fixed w-full z-50">
+        <div class="nav-container px-4 mx-auto max-w-7xl">
+            <div class="flex items-center justify-between w-full">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="logo1.png" alt="Logo" class="h-12">
+                        
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">About</a>
+                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Disease Predictor</a>
+                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Health Tips</a>
+                    <a href="review.html" class="text-gray-800 hover:text-blue-600 font-medium">Reviews</a>
+                    <a href="contactus.html" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2">Patient Reviews</h1>
+            <p class="text-lg mb-6">Read what our patients have to say about our services!</p>
+            <button id="reviewButton" class="bg-white text-purple-800 px-4 py-2 rounded shadow hover:bg-gray-200">Leave a Review</button>
+        </div>
+    </section>
+
+   
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200" alt="Sarah Johnson" class="review-image">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Sarah Johnson</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-2">Condition: Diabetes Management</p>
+                    <p class="text-gray-700">"The disease prediction system was incredibly accurate. It helped me identify early signs of diabetes, allowing me to take preventive measures quickly."</p>
+                    <p class="text-sm text-gray-500 mt-4">March 15, 2024</p>
+                </div>
+
+              
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200" alt="Michael Chen" class="review-image">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Michael Chen</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-2">Condition: Heart Health Monitoring</p>
+                    <p class="text-gray-700">"The preventive care recommendations were spot-on. The system helped me understand my heart health risks and take appropriate action."</p>
+                    <p class="text-sm text-gray-500 mt-4">March 12, 2024</p>
+                </div>
+
+              
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200" alt="Emily Rodriguez" class="review-image">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Emily Rodriguez</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-2">Condition: Respiratory Health</p>
+                    <p class="text-gray-700">"The health tips provided were practical and effective. I've seen significant improvement in my respiratory health following the recommendations."</p>
+                    <p class="text-sm text-gray-500 mt-4">March 10, 2024</p>
+                </div>
+
+               
+                <div class="card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200" alt="David Thompson" class="review-image">
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">David Thompson</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-2">Condition: Preventive Care</p>
+                    <p class="text-gray-700">"Outstanding service! The early detection system helped identify potential health issues before they became serious problems."</p>
+                    <p class="text-sm text-gray-500 mt-4">March 8, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Disease Predictor</h3>
+                    <p class="text-gray-400">Empowering healthcare through AI innovation</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Health Tips</a></li>
+                        <li><a href="contactus.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" class="text-gray-400 hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Disease Predictor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
