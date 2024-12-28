@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips - Disease Predictor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #eeeff1;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #eeeff1;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tip-card {
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-[#eeeff1] shadow-md fixed w-full z-50">
+        <div class="nav-container px-4 mx-auto max-w-7xl">
+            <div class="flex items-center justify-between w-full">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="logo1.png" alt="Logo" class="h-12">
+                        
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">About</a>
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600 font-medium">Disease Predictor</a>
+                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Health Tips</a>
+         
+                    <a href="review.html" class="text-gray-800 hover:text-blue-600 font-medium">Reviews</a>
+                    <a href="contactus.html" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-10 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Daily Health Tips</h1>
+                <p class="text-xl opacity-90">Expert recommendations for a healthier lifestyle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Nutrition Tips -->
+                <div class="tip-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=2070" 
+                         alt="Healthy Food" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Nutrition Guidelines</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Eat a rainbow of fruits and vegetables daily
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Choose whole grains over refined grains
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Stay hydrated with 8 glasses of water daily
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Exercise Tips -->
+                <div class="tip-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&q=80&w=2070" 
+                         alt="Exercise" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Physical Activity</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                30 minutes of moderate exercise daily
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Mix cardio with strength training
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Take regular walking breaks during work
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mental Health -->
+                <div class="tip-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2070" 
+                         alt="Mental Health" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Mental Wellness</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Practice daily meditation or mindfulness
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Maintain a regular sleep schedule
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Take breaks from digital devices
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Tips Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Daily Health Practices</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Morning Routine</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-sun text-yellow-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Start with Hydration</h4>
+                                <p class="text-gray-600">Drink a glass of water with lemon to kickstart metabolism</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-running text-blue-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Morning Exercise</h4>
+                                <p class="text-gray-600">15 minutes of stretching or light yoga</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Evening Routine</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-moon text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Digital Sunset</h4>
+                                <p class="text-gray-600">Avoid screens 1 hour before bedtime</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-bed text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Sleep Schedule</h4>
+                                <p class="text-gray-600">Aim for 7-9 hours of quality sleep</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Tips Banner -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Quick Health Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-4">
+                    <i class="fas fa-heart text-3xl mb-4"></i>
+                    <p>Stay active daily</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-apple-alt text-3xl mb-4"></i>
+                    <p>Eat fresh foods</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-bed text-3xl mb-4"></i>
+                    <p>Sleep well</p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-smile text-3xl mb-4"></i>
+                    <p>Stay positive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Disease Predictor</h3>
+                    <p class="text-gray-400">Empowering healthcare through AI innovation</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Health Tips</a></li>
+                        <li><a href="contactus.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" class="text-gray-400 hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Disease Predictor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
