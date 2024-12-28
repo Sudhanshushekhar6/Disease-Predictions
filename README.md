@@ -39,4 +39,4 @@ Predict disease risks and suggest personalized health tips.
 ## License
 This project is licensed under the MIT License.
 ## Disclaimer
-This tool is designed to assist and not replace professional medical advice. Always consult a healthcare provider for clinical decisions.
+This tool is designed to assist and not replace professional medical advice. Always consult a healthcare provider for clinical decisions..
