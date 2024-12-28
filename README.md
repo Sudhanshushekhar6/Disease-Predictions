@@ -1,6 +1,6 @@
 ##     Your Health, Our Priority: Predict, Prevent, Protect
 <p align="center">
-<img src="static/logo1.png" width="200"/>
+<img src="static/logo1 (2).png" width="200"/>
  </p>
 
 
