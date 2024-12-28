@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictor - AI-Powered Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #eeeff1;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #eeeff1;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictor - AI-Powered Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #eeeff1;
+        }
+
+        
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #eeeff1;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-[#eeeff1] shadow-md fixed w-full z-50">
+        <div class="nav-container px-4 mx-auto max-w-7xl">
+            <div class="flex items-center justify-between w-full">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="logo1.png" alt="Logo" class="h-12">
+                        
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="firstpage.html" class="text-gray-800 hover:text-blue-600 font-medium">About</a>
+                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Disease Predictor</a>
+                    <a href="health.html" class="text-gray-800 hover:text-blue-600 font-medium">Health Tips</a>
+                    <a href="review.html" class="text-gray-800 hover:text-blue-600 font-medium">Reviews</a>
+                    <a href="contactus.html" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">AI-Powered Healthcare Prediction</h1>
+                    <p class="text-xl mb-8">Early detection and prevention through advanced artificial intelligence. Get accurate disease predictions and personalized health recommendations.</p>
+                    <div class="flex space-x-4">
+                        <a href="#predict" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Try Predictor</a>
+                        <a href="#learn" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070" alt="AI Healthcare" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Disease Predictor</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We combine cutting-edge AI technology with medical expertise to provide accurate disease predictions and early detection capabilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="feature-card bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI-Powered Analysis</h3>
+                    <p class="text-gray-600">Advanced machine learning algorithms analyze symptoms and medical data for accurate predictions.</p>
+                </div>
+
+                <div class="feature-card bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Privacy First</h3>
+                    <p class="text-gray-600">Your health data is encrypted and protected with the highest security standards.</p>
+                </div>
+
+                <div class="feature-card bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Real-time Updates</h3>
+                    <p class="text-gray-600">Get instant predictions and health recommendations based on your input.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card bg-blue-50 p-6 rounded-xl">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">98%</div>
+                    <div class="text-gray-600">Accuracy Rate</div>
+                </div>
+                <div class="stat-card bg-purple-50 p-6 rounded-xl">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">50K+</div>
+                    <div class="text-gray-600">Users Helped</div>
+                </div>
+                <div class="stat-card bg-green-50 p-6 rounded-xl">
+                    <div class="text-3xl font-bold text-green-600 mb-2">24/7</div>
+                    <div class="text-gray-600">Available Support</div>
+                </div>
+                <div class="stat-card bg-yellow-50 p-6 rounded-xl">
+                    <div class="text-3xl font-bold text-yellow-600 mb-2">100+</div>
+                    <div class="text-gray-600">Health Parameters</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Disease Predictor</h3>
+                    <p class="text-gray-400">Empowering healthcare through AI innovation</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="firstpage.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="firstpage.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" class="text-gray-400 hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=100010464275112" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/KumarSudha77080" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sudhanshu-kumar-a9bb36268/" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Disease Predictor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
