@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Disease Predictor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #6200ea;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background-color: #4500b5;
+        }
+
+        .hero {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+
+        .hero video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .hero h1 {
+            position: relative;
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .predict-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .predict-button:hover {
+            background-color: #4500b5;
+        }
+
+       
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #6200ea;
+            border-radius: 8px;
+            text-align: center;
+            display: none; /* Hidden initially */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <h1>Diabetes Disease Predictor</h1>
+        <div class="nav-links">
+            <a href="firstpage.html">Home</a> <!-- Home button -->
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="189681-886028714.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Assess Your Risk</h1>
+    </section>
+
+    <div class="content">
+        <h2>Enter Your Details</h2>
+        <div class="form-group">
+            <label for="glucose">Glucose:</label>
+            <input type="number" id="glucose" placeholder="Enter your glucose level">
+        </div>
+        <div class="form-group">
+            <label for="bmi">BMI (Body Mass Index):</label>
+            <input type="number" id="bmi" placeholder="Enter your BMI">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <label for="insulin">Insulin:</label>
+            <input type="number" id="insulin" placeholder="Enter your insulin level">
+        </div>
+        <div class="form-group">
+            <label for="bloodpressure">Blood Pressure:</label>
+            <input type="number" id="bloodpressure" placeholder="Enter your blood pressure">
+        </div>
+
+        <button class="predict-button" onclick="redirectToResultPage()">Predict</button>
+
+    </div>
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Disease Predictor</h3>
+                    <p class="text-gray-400">Empowering healthcare through AI innovation</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" class="text-gray-400 hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Disease Predictor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToResultPage() {
+            const glucose = document.getElementById('glucose').value;
+            const bmi = document.getElementById('bmi').value;
+            const age = document.getElementById('age').value;
+            const insulin = document.getElementById('insulin').value;
+            const bloodpressure = document.getElementById('bloodpressure').value;
+
+            // Redirect to the second page with query parameters
+            const url = `result1.html?glucose=${glucose}&bmi=${bmi}&age=${age}&insulin=${insulin}&bloodpressure=${bloodpressure}`;
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
