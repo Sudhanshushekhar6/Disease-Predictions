@@ -29,14 +29,25 @@ Predict disease risks and suggest personalized health tips.
   - Scikit-learn, Numpy, Pandas, Matplotlib
 - *MLAlgorithm*:  
 ## Getting Started
-1. Clone the repository:
-    git clone https://github.com/yourusername/chronic-disease-prediction.git  
-    cd chronic-disease-prediction
-2.Install dependencies:
-   pip install -r requirements.txt  
-3.Run the application:
-   python app.py  
+### 1. Clone the repository:
+```sh
+git clone https://github.com/Sudhanshushekhar6/chronic-disease-prediction.git
+cd chronic-disease-prediction
+```
+
+### 2. Install dependencies:
+```sh
+pip install -r requirements.txt
+```
+
+### 3. Run the application:
+```sh
+python app.py
+```
+
 ## License
 This project is licensed under the MIT License.
+
 ## Disclaimer
-This tool is designed to assist and not replace professional medical advice. Always consult a healthcare provider for clinical decisions..
+This tool is designed to assist and not replace professional medical advice. Always consult a healthcare provider for clinical decisions.
+
